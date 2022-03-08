@@ -1,6 +1,20 @@
 
 # 3D Model-Viewer
-Web Component to easily embed 3D files to HTML pages usin BabylonJS
+Web Component to easily embed 3D files to HTML pages using BabylonJS.
+
+Forked from https://github.com/RussoFaccin/model-viewer. This fork has been modified for specific applications and is not meant for general use. You should probably use the original repo for your own project.
+
+### Demo
+
+Setup
+1. Clone this repo
+2. `$ yarn` in repo root dir ([don't have yarn?](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable))
+3. `$ yarn run build` in repo root dir
+
+Run
+1. `$ yarn http-server .` in root dir
+2. Visit [localhost:8080/examples/iframe.html](http://localhost:8080/examples/iframe.html) to view
+
 ### Usage
 Include BabylonJS engine script. [Get here](https://doc.babylonjs.com/babylon101/how_to_get)
 

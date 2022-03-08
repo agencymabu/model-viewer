@@ -1,27 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>3D Model Viewer - Example</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>3D Model Viewer - To be IFramed into another page</title>
+
   <!-- BabylonJS -->
   <script src="https://cdn.babylonjs.com/babylon.js"></script>
   <!-- GLTF Loader -->
   <script src="https://cdn.babylonjs.com/loaders/babylon.glTF2FileLoader.min.js"></script>
   <!-- Model-Viewer Web Component -->
   <script src="../dist/model-viewer.min.js"></script>
+
   <!-- Styles -->
   <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
     model-viewer {
-      width: 400px;
-      height: 400px;
+      width: 100vw;
+      height: 100vh;
     }
   </style>
+
 </head>
 <body>
     <model-viewer
-      src="https://googlewebcomponents.github.io/model-viewer/examples/assets/DamagedHelmet/DamagedHelmet.gltf"
+      src="./DamagedHelmet.gltf"
       camradius="3"
       yoffset="-0.15"
       bgcolor="#dbdbdb">
